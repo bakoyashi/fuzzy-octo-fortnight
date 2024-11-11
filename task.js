@@ -1,13 +1,13 @@
-class TaskManager {
+class TaskList {
     constructor() {
-        this.taskList = [];
+        this.tasks = [];
     }
 
-    createTask(taskText) {
-        this.taskList.push({
+    addTask(task) {
+        this.tasks.push({
             id: Date.now(),
-            content: taskText,
-            isDone: false
+            text: task,
+            completed: false
         });
     }
 }
